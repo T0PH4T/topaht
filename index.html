@@ -3,78 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Classroom</title>
+  <title>Classroom</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 
 <h1>Classroom</h1>
 
-<nav class="tabs">
-  <button class="tab active" onclick="openTab('games', this)">🎮 Games</button>
-  <button class="tab" onclick="openTab('proxies', this)">🛡️ Proxies</button>
-</nav>
+<!-- Dashboard Cards -->
+<div class="card-container">
+  <div class="card" onclick="openClass('science')">
+    <div class="card-color science"></div>
+    <div class="card-icon">🔬</div>
+    <div class="card-title">Science</div>
+    <div class="card-subtitle">Click to open all proxies</div>
+  </div>
 
-<!-- GAMES -->
-<section id="games" class="tab-content active">
-  <h2>GAMES</h2>
-  <ul>
-    <li><a href="https://truffled.lol/index.html" target="_blank">Game 1</a></li>
-    <li><a href="https://cfisd.mathforkids.buzz/g" target="_blank">Game 2</a></li>
-    <li><a href="https://www.msn.com/en-us/play?ocid=ogme1" target="_blank">Game 3</a></li>
-    <li><a href="https://b46e6277.3kh0-v4.pages.dev/projects" target="_blank">Game 4</a></li>
+  <div class="card" onclick="openClass('english')">
+    <div class="card-color english"></div>
+    <div class="card-icon">📖</div>
+    <div class="card-title">English Language Arts</div>
+    <div class="card-subtitle">Click to open all games</div>
+  </div>
+</div>
 
-    <li><a href="https://math-lessons.vercel.app/clients.html" target="_blank">Game 5</a></li>
-    <li><a href="https://astronetclient.pages.dev/compiled/web/" target="_blank">Game 6</a></li>
-    <li><a href="https://mcraft.fun/" target="_blank">Game 7</a></li>
-    <li><a href="https://resent.vercel.app/" target="_blank">Game 8</a></li>
+<!-- Science Class -->
+<div id="science" class="class-content">
+  <div class="class-header">
+    <h2>Science Class - Proxies</h2>
+  </div>
+  <div class="links">
+    <a href="https://truffled.lol/index.html" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">Truffled Proxy</div>
+    </a>
+    <a href="https://workstation.lhost.dev/" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">Workstation Proxy</div>
+    </a>
+    <a href="https://gointerstellar.app/" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">Interstellar Proxy</div>
+    </a>
+    <a href="https://www.myturtle.net/" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">MyTurtle Proxy</div>
+    </a>
+    <a href="https://daydreamx.pro/" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">DaydreamX Proxy</div>
+    </a>
+    <a href="https://canlite.org/proxe" target="_blank">
+      <div class="link-icon">🌐</div>
+      <div class="link-title">Canlite Proxy</div>
+    </a>
+  </div>
+</div>
 
-    <li><a href="https://d1tm91r4ytbt54.cloudfront.net/2779cbcb-a02f-48a3-9e2e-95a8d123d165/1685483461665/web/index.html" target="_blank">Game 9</a></li>
-    <li><a href="https://lesson-1-guru.pages.dev/#google_vignette" target="_blank">Game 10</a></li>
-
-    <li><a href="https://instructor.algebracontest.com/course.html" target="_blank">Game 11</a></li>
-    <li><a href="https://sites.google.com/boontonschools.org/stubs-unblocked-games/home" target="_blank">Game 12</a></li>
-    <li><a href="https://sites.google.com/view/burritoedition/home" target="_blank">Game 13</a></li>
-    <li><a href="https://sites.google.com/site/unblockedgames77/home" target="_blank">Game 14</a></li>
-
-    <li><a href="https://zatoga.net" target="_blank">Game 15</a></li>
-    <li><a href="https://sites.google.com/view/pizzaedition/home" target="_blank">Game 16</a></li>
-  </ul>
-</section>
-
-<!-- PROXIES -->
-<section id="proxies" class="tab-content">
-  <h2>PROXIES</h2>
-  <ul>
-    <li><a href="https://jiyuu.dnsitalia.org/" target="_blank">Proxy 1</a></li>
-    <li><a href="https://workstation.lhost.dev/" target="_blank">Proxy 2</a></li>
-    <li><a href="https://gointerstellar.app/" target="_blank">Proxy 3</a></li>
-
-    <li><a href="https://www.myturtle.net/" target="_blank">Proxy 4</a></li>
-    <li><a href="https://daydreamx.pro/" target="_blank">Proxy 5</a></li>
-    <li><a href="https://canlite.org/proxe" target="_blank">Proxy 6 (filled with ads)</a></li>
-    <li><a href="https://kazw.net/" target="_blank">Proxy 7 (my perosonal favorite but is filled with ads and requires ad watch to access)</a></li>
-
-    <li><a href="https://pluralsight.gq/" target="_blank">Proxy 8</a></li>
-    <li><a href="https://gamgasyoppakuteri-zenttodabi.gslb.info/" target="_blank">Proxy 9</a></li>
-    <li><a href="https://i.myclarevision.com/" target="_blank">Proxy 10</a></li>
-    <li><a href="https://freelearn.myclarevision.com/" target="_blank">Proxy 11</a></li>
-    <li><a href="https://thisismathteach.myclarevision.com/" target="_blank">Proxy 12</a></li>
-    <li><a href="https://r.soraapp.gq/" target="_blank">Proxy 13</a></li>
-    <li><a href="https://www.pleaseinput.html-5.me/" target="_blank">Proxy 14</a></li>
-
-    <li><a href="https://philosophy.k12biography.com/" target="_blank">Proxy 15 (requires ad watch)</a></li>
-    <li><a href="https://warm-cloud.k12biology.com/" target="_blank">Proxy 16 (requires ad watch)</a></li>
-    <li><a href="https://trigonometry.scientificsense.org/" target="_blank">Proxy 17 (requires ad watch)</a></li>
-    <li><a href="https://happy-rain.nstabiology.org/" target="_blank">Proxy 18 (requires ad watch)</a></li>
-
-    <li><a href="https://loungef2x-h.global.ssl.fastly.net/" target="_blank">Proxy 19</a></li>
-    <li><a href="https://loungef2x-t.global.ssl.fastly.net/" target="_blank">Proxy 20</a></li>
-    <li><a href="https://loungef2x.web.app/" target="_blank">Proxy 21</a></li>
-    <li><a href="https://loungef2x.global.ssl.fastly.net/" target="_blank">Proxy 22</a></li>
-  </ul>
-</section>
+<!-- English Class -->
+<div id="english" class="class-content">
+  <div class="class-header">
+    <h2>English Language Arts Class - Games</h2>
+  </div>
+  <div class="links">
+    <a href="https://cfisd.mathforkids.buzz/g" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Math Fun</div>
+    </a>
+    <a href="https://www.msn.com/en-us/play?ocid=ogme1" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">MSN Games</div>
+    </a>
+    <a href="https://b46e6277.3kh0-v4.pages.dev/projects" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Mini Projects</div>
+    </a>
+    <a href="https://math-lessons.vercel.app/clients.html" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Math Lessons</div>
+    </a>
+    <a href="https://astronetclient.pages.dev/compiled/web/" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Astronet</div>
+    </a>
+    <a href="https://mcraft.fun/" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">MCraft</div>
+    </a>
+    <a href="https://resent.vercel.app/" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Resent</div>
+    </a>
+    <a href="https://d1tm91r4ytbt54.cloudfront.net/2779cbcb-a02f-48a3-9e2e-95a8d123d165/1685483461665/web/index.html" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Cloud Game</div>
+    </a>
+    <a href="https://lesson-1-guru.pages.dev/#google_vignette" target="_blank">
+      <div class="link-icon">🕹️</div>
+      <div class="link-title">Lesson Guru</div>
+    </a>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
